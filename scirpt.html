@@ -1,0 +1,22 @@
+
+<html>
+<body>
+
+</body>
+<script>
+
+const div = document.createElement('div')
+
+div.setAttribute("class", "item-class")
+div.id = Math.round(Math.random()*10)
+// div.style.color = 'red'
+div.style.backgroundColor= "green"
+div.style.padding= "10px"
+const childText = document.createTextNode("Child node")
+div.appendChild(childText)
+document.body.appendChild(div)
+
+console.log(div)
+</script>
+
+</html>

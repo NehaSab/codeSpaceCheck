@@ -1,0 +1,31 @@
+<html>
+
+<body>
+   <li class="language">Java</li>
+
+</body>
+
+<script>
+
+    function addList(lang) {
+        const li = document.createElement('li')
+        li.innerHTML =`${lang}`
+       parentLi =  document.querySelector('.language')
+        parentLi.appendChild(li)
+
+    }
+
+    addList('python')
+    addList("Ruby")
+
+    function optimiseFun(lang) {
+       const li =  document.createElement('li')
+       li.appendChild(document.createTextNode(`${lang}`))
+        document.querySelector('.language').appendChild(li)
+
+    }
+
+    optimiseFun("javascirpt")
+
+</script>
+</html>
