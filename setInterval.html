@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+<body>
+    <h1 id="java">Java Script</h1>
+    <button id="start">start</button>
+    <button id="stop">Stop</button>
+</body>
+
+
+<script>
+
+    let intervalId;
+    
+    const startFun = function(){
+            console.log("Neha",Date.now())}
+
+
+    const startInterval = function(){
+        if(!intervalId){
+     intervalId =  setInterval(startFun, 2000)
+        console.log("start the interval",intervalId)
+
+        }
+    }
+
+
+   const stopInterval =  function(){
+
+        clearInterval(intervalId)
+        intervalId=null
+
+    
+  
+
+    console.log("stopped interval")
+   }
+
+
+   document.querySelector('#start').addEventListener('click', startInterval)
+   document.querySelector('#stop').addEventListener('click', stopInterval)
+   console.log("I am printed")
+
+
+
+</script>
+</html>
